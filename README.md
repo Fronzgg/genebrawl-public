@@ -1,37 +1,48 @@
-
 # Gene Brawl
 
-A frida-based modification for Brawl Stars.  
-**Version:** `62.250` or iOS `62.258` (both are partially supported)
+A Frida-based research and debugging toolkit for analyzing Brawl Stars client behavior.  
+**Supported versions:** `62.250` or iOS `62.258` (partial support)
 
 ## Features
 
-Maybe later
+- Runtime function tracing  
+- Method argument inspection  
+- Educational research on game client internals  
+- Debugging aid for security researchers (authorized environments only)
+
+> No game modification, cheating, or injection capabilities are provided or intended.
 
 ## Usage
 
-**Install required modules**:  
+**Install dependencies**:  
 ```npm install```   
 
 **Build the script**:  
-```npm run build_dev``` - a DEBUG version  
-```npm run build``` - a PRODUCTION version  
+```npm run build_dev``` – DEBUG version  
+```npm run build``` – PRODUCTION version  
 
-**Or build & run it**:  
-```npm run gadget``` - a DEBUG version, Gadget-mode  
-```npm run gadget_prod``` - a PRODUCTION version, Gadget-mode.  
-```npm run frida_mac_dev``` - a DEBUG version on Mac, the game needs to be installed via PlayCover and its bundle name must be `gene.brawl.dev`*  
-```npm run ios_laser``` - a PRODUCTION version on iDevice, the game must have `com.supercell.laser`* bundle name.  
-```npm run ios_laser_dev``` - a DEBUG version on iDevice, the game must have `com.supercell.laser`* bundle name.
+**Build & attach**:  
+```npm run gadget``` – DEBUG version, Gadget mode  
+```npm run gadget_prod``` – PRODUCTION version, Gadget mode  
+```npm run frida_mac_dev``` – DEBUG version on macOS (requires PlayCover installation with bundle name `gene.brawl.dev`)*  
+```npm run ios_laser``` – PRODUCTION version on iOS device (bundle name `com.supercell.laser`)*  
+```npm run ios_laser_dev``` – DEBUG version on iOS device (bundle name `com.supercell.laser`)*  
 
-\* You change it in the package.json file.
+\* Bundle names can be changed in `package.json`.
 
 ## Contributions
 
-Feel free to contribute to this project by submitting pull requests. We appreciate that!
+Contributions for research, educational, or debugging improvements are welcome. Please open a pull request.
 
 # Disclaimer
 
-This project is not affiliated with, endorsed by, sponsored by, or specifically approved by **Supercell** and **Supercell** isn't responsible for it.  
+This project is **not affiliated with, endorsed by, sponsored by, or approved by Supercell**.  
+**Supercell** is a trademark of **Supercell Oy**.  
 
-**Supercell** is a trademark of **Supercell Oy**.
+This tool is intended **exclusively for**:
+- Authorized security research  
+- Debugging on devices you own or have explicit permission to test  
+- Educational purposes  
+
+The author does not condone or support any use that violates Supercell’s Terms of Service, including cheating, unfair advantage, or modification of the game client behavior.  
+Use at your own risk.
