@@ -7,8 +7,8 @@ const LogicVersion_environment = Libg.offset(0x0, 0xEE68B4);
 const LogicVersion_isChinaVersion = Libg.offset(0x0, 0x39271C); // "Only global leaderboard available but fetching local" | or LogicVersion_isStage + 12
 const LogicVersion_isDeveloperBuild = Libg.offset(0x0, 0x39275C); // "LATENCY TESTS" | or LogicVersion_isChinaVersion + 8
 
-const version = LogicDefines.isPlatformAndroid() ? "62.250" : "62.258";
-const scriptVersion = 87;
+const version = LogicDefines.isPlatformAndroid() ? "67.264" : "67.264";
+const scriptVersion = 88;
 
 type ScriptEnvironment = "dev" | "prod";
 
